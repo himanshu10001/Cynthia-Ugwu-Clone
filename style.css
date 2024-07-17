@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: "General Sans";
+     */
+     font-family: sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    background-color: black;
+
+}
+#hero{
+    position: relative;
+    width: 100%;
+    color: white;
+    height: 100vh;
+    background-color: black;
+}
+#nav{
+    width: 100%;
+    padding: 20px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav a{
+    text-decoration: none;
+    font-size: 18px;
+
+    color: white;
+}
+
+#heading{
+    margin-top: 90px;
+}
+
+
+#heading h1{
+    line-height: 1;
+    /* font-family: 'General Sans Medium'; */
+    font-size: 9vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    opacity: .6;
+    margin-left: 30px;
+}
+#heading #secondh1{
+    margin-left: 15vw;
+} 
+.blocktext{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: fit-content;
+    /* background-color: rebeccapurple; */
+}
+.blocktext h5{
+    text-align: right;
+    font-weight: 500;
+    font-size: .75rem;
+    text-transform: uppercase;
+    line-height: 1rem;
+}
+#smallheading{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 100px;
+    padding-right: 50px;
+}
+#smallheading h5{
+    text-transform: uppercase;
+    margin-top: .5vw;
+    text-align: right !important;
+    font-size: 1vw;
+
+}
+#herofooter{
+    padding: 0, 2vw;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 3%;
+    margin-right: 20px;
+    padding-right: 30px;
+}
+#herofooter #iconset{
+    display: flex;
+    gap: 5px;
+}
+#herofooter .circle{
+    display: flex;
+    width: 25px;
+    border-radius: 50%;
+    height: 25px;
+    align-items: right;
+    justify-content: space-between;
+    background-color: #888;
+}
+
+#herofooter a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+#second{
+    padding-top: 200px;
+    color: white;
+    padding-right: 10vw;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+.elem{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.5vw 3vw;
+    padding-right: 0;
+    width: 100%;
+    border-top: 1px solid #888;
+}
+.elem h1{
+    text-transform: uppercase;
+    font-size: 5vw;
+    opacity: .7;
+}
+.elemlast{
+    border-bottom: 1px solid #888;
+}
+
+.elem img{
+    /* display: none; */
+    opacity: 0;
+    height: 140%;
+    pointer-events: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    /* transform: translate(-50%,-50%); */
+}
+
+#about{
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 30px;
+    padding: 10vw 10vw;
+    padding-left: 40vw;
+    background-color: black;
+
+}
+#about img{
+    width: 200px;
+    
+}
+
+#textabout{
+    width: 25rem;
+    /* background-color: red; */
+}
+#textabout h5{
+text-transform: uppercase;
+opacity: .6;
+margin-bottom: 10px;
+}
+#textabout p{
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+#textabout a{
+    padding: 12px 22px;
+    border: 1px solid white;
+    border-radius: 100px;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#subscribe{
+    color: white;
+    padding: 20px 30px;
+}
+#subscribe h5{
+    text-transform: uppercase;
+    opacity: .6;
+}
+#subscribe h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    padding: 20px 30px;
+
+}
+#footerright{
+    display: flex;
+    gap: 30px;
+}
+
+#footerleft{
+    display: flex;
+    gap: 20px;
+}
+#footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#minicircle{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 99999;
+    border-radius: 50%;
+    background-color: white;
+    transition: (0.19,1,0.22,1) 1s;
+
+}
+
+
+.bounding{
+    display: flex;
+    width: fit-content;
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+.bounding .boundingelm{
+    transform: translateY(100%);
+}
