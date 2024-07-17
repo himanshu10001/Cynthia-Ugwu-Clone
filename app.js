@@ -15,7 +15,7 @@ function firstPageAnim(){
 
     .to(".boundingelm",{
         y:0,
-        // opacity:0,
+        
         duration:1.5,
         delay:-1,
         ease:Expo.easeInOut,
@@ -27,7 +27,7 @@ function firstPageAnim(){
         delay:-1,
         duration:1.5,
         ease:Expo.easeInOut,
-        // stagger:.2
+        
     })
 
 
@@ -43,7 +43,6 @@ function circleChaptaKaro(){
         var ydiff=dets.clientY-yprev;
         xprev =dets.clientX;
         yprev =dets.clientY;
-        // console.log(xdiff,ydiff)
        xscale= gsap.utils.clamp(.8,1.2,xdiff);
        yscale= gsap.utils.clamp(.8,1.2,ydiff);
 
@@ -58,12 +57,8 @@ circleChaptaKaro();
 
 function circleMouseFollower(xscale,yscale){
     window.addEventListener("mousemove",function(dets){
-        // console.log(dets.clientX, dets.clientY);
+        
         this.document.querySelector('#minicircle').style.transform=`translate(${dets.clientX}px, ${dets.clientY}px) scale(${xscale}, ${yscale})`;
-        // document.querySelector("#minicircle").style.top=`${event.offsetY}px`;
-        // document.querySelector("#minicircle").style.left=`${event.offsetX}px`;
-        // console.log(event.offsetX)
-        // console.log(event.offsetY)
     })
 }
 circleMouseFollower();
